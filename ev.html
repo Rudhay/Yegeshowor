@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Event</title>
+</head>
+<body>
+<h1 >This is h1 </h1>
+<input type="text" name="ne" id="a" placeholder="your data">
+
+<select id="s" onchange="ww()">
+	<option value="Marathi">Marathi</option>
+	<option value="Hindi">Hindi</option>
+    <option value="English">English</option>
+    <option value="Gujarati">Gujarati</option>
+    <option value="Telagu">Telagu</option>
+</select>
+<input type="submit" name="" >
+
+<button onsubmit="">submit data</button>
+
+<button >click me</button>
+onclick="function name" ondblclick="a()"onmouseenter="a()"
+onmouseleave="a()"
+onfocus="s()"
+onfocusout="s()"
+onkeydown="d()"
+onkeyup="d()"
+ onkeypress="d()"
+<script type="text/javascript">
+	submit();
+	
+		function ww(){
+	var w=document.getElementById('s').value;	
+	      document.getElementsByTagName('h1')[0].innerText=w; 
+		}
+
+
+
+
+
+    function d(){
+   var v=document.getElementById('a').value;
+         document.getElementsByTagName('h1')[0].innerText=v; 
+    }
+
+	function a(){
+		alert(document.getElementById('a').value);
+	}
+	function s(){
+		document.getElementById('a').style.backgroundColor='blue';
+	}
+
+</script>
+</body>
+</html>
